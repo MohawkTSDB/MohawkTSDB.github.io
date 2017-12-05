@@ -1,7 +1,3 @@
----
-title: Mohawk TSDB
----
-
 # Mohawk TSDB
 
 ## Introduction
