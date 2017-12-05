@@ -1,7 +1,3 @@
----
-title: This is my title
----
-
 # Mohawk TSDB
 
 ## Introduction
