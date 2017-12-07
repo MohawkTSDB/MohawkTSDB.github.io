@@ -1,3 +1,6 @@
+
+/ [mohawk](/) / [performance](/benchmarks/perf.md])
+
 ## Performance
 
 CPU and Memory usage on VMs running openshift, metrics are collected via Heapster.
