@@ -68,7 +68,7 @@ Mohawk architecture makes it easy to implement and set up storage plugins for ne
 
 (1) the mongo usage metrics does not include usage of the mongodb server.
 
-####### Description: 1000 writes + 1000 reads ( [benchmark.py](/benchmark/benchmark.py) ) less is better.
+###### Description: 1000 writes + 1000 reads ( [benchmark.py](/benchmark/benchmark.py) ) less is better.
 
 ##### Chart: different Plugins vs. Run Time
 
