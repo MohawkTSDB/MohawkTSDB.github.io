@@ -1,4 +1,3 @@
-/ [mohawk](/)
 
 # Mohawk TSDB
 
