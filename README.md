@@ -1,3 +1,5 @@
+[/mohawk/](./)
+
 # Mohawk TSDB
 
 ![Mohawk](https://github.com/MohawkTSDB/MohawkTSDB.github.io/raw/master/images/logo-128.png?raw=true "Mohawk Logo")
