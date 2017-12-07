@@ -56,8 +56,6 @@ Mohawk architecture makes it easy to implement and set up storage plugins for ne
 
 ## Benchmarks
 
-##### Description: 1000 writes + 1000 reads ( [benchmark.py](/benchmark/benchmark.py) ) less is better.
-
 [Benchmark](/benchmark) results depend on system resources, current work load and network.
 
 ##### Mohawk with different Plugins running on a desktop machine.
@@ -69,6 +67,8 @@ Mohawk architecture makes it easy to implement and set up storage plugins for ne
 |sqlite3   |  0m14.471s | 0.2 - 7.4 | 8416 - 12560  |
 
 (1) the mongo usage metrics does not include usage of the mongodb server.
+
+####### Description: 1000 writes + 1000 reads ( [benchmark.py](/benchmark/benchmark.py) ) less is better.
 
 ##### Chart: different Plugins vs. Run Time
 
