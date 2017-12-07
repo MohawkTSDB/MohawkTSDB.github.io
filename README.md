@@ -41,6 +41,8 @@ Mohawk is tested(2) with [Hawkular](http://www.hawkular.org/) plugins, like [Haw
 
 (2) Mohawk implement only part of Hawkular's API, some functionality may be missing.
 
+![Grafana plugin](https://github.com/yaacov/fosdem-2017/blob/master/images/grafana-screenshot2.png)
+
 ## Storage Plugins
 
 Mohawk architecture makes it easy to implement and set up storage plugins for new data storage. The storage directory include documentation, examples and a template for plugin development.
