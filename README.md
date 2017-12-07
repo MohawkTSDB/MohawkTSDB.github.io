@@ -17,6 +17,7 @@ Mohowk exposes the same simple REST API for different storage options, consumer 
 ## Getting started
 
 [Installation instruction in Github](https://github.com/MohawkTSDB/mohawk#installation)
+
 [First steps examples on Github](https://github.com/MohawkTSDB/mohawk#running-the-server)
 
 #### Compatibility
