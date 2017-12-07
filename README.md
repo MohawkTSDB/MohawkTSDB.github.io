@@ -17,7 +17,7 @@ Mohowk exposes the same simple REST API for different storage options, consumer 
 ## Getting started
 
 #### Go to the source:
-https://github.com/MohawkTSDB/mohawk
+[https://github.com/MohawkTSDB/mohawk](https://github.com/MohawkTSDB/mohawk)
 
 #### Using a Copr repository for Fedora:
 
