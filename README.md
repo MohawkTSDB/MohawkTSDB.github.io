@@ -16,21 +16,8 @@ Mohowk exposes the same simple REST API for different storage options, consumer 
 
 ## Getting started
 
-#### Go to the source:
-[https://github.com/MohawkTSDB/mohawk](https://github.com/MohawkTSDB/mohawk)
-
-#### Using a Copr repository for Fedora:
-
-```
-sudo dnf copr enable yaacov/mohawk
-sudo dnf install mohawk
-```
-
-#### Run using a container:
-
-```
-docker run -v [PATH TO KEY AND CERT FILES]:/root/ssh:Z yaacov/mohawk
-```
+[Installation instruction in Github](https://github.com/MohawkTSDB/mohawk#installation)
+[First steps examples on Github](https://github.com/MohawkTSDB/mohawk#running-the-server)
 
 #### Compatibility
 
