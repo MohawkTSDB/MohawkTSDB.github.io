@@ -7,7 +7,7 @@ Read + Write time [Sec] Banchmark : 1000 writes + 1000 reads
 
 #### Performance
 
-When run on desktop, cpu and memory usage are also recorded. On VM, see the [Performance](/benchmark/PERF.md) doc.
+When run on desktop, cpu and memory usage are also recorded. On VM, see the [Performance](/benchmark/PERF.html) doc.
 
 #### Run on desktop:
 
