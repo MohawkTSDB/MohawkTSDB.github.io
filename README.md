@@ -41,6 +41,8 @@ Mohawk is tested(2) with [Hawkular](http://www.hawkular.org/) plugins, like [Haw
 
 (2) Mohawk implement only part of Hawkular's API, some functionality may be missing.
 
+##### Hawkular Grafana Plugin showing mohawk data:
+
 ![Grafana plugin](https://github.com/yaacov/fosdem-2017/raw/master/images/grafana-screenshot2.png)
 
 ## Storage Plugins
