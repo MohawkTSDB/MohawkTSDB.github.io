@@ -20,13 +20,13 @@ Mohowk exposes the same simple REST API for different storage options, consumer 
 
 [First steps examples on Github](https://github.com/MohawkTSDB/mohawk#running-the-server)
 
-#### Compatibility
+## Compatibility
 
 Mohawk is tested(2) with [Hawkular](http://www.hawkular.org/) plugins, like [Hawkular Grafana Plugin](https://grafana.com/plugins/hawkular-datasource) and clients like [Python](https://github.com/hawkular/hawkular-client-python) and [Ruby](https://github.com/hawkular/hawkular-client-ruby). Mohawk also work with [Heapster](https://github.com/kubernetes/heapster) to automagically scrape metrics from Kubernetes/OpenShift clusters.
 
 (2) Mohawk implement only part of Hawkular's API, some functionality may be missing.
 
-#### Storage Plugins
+## Storage Plugins
 
 Mohawk architecture makes it easy to implement and set up storage plugins for new data storage. The storage directory include documentation, examples and a template for plugin development.
 
@@ -40,14 +40,14 @@ Mohawk architecture makes it easy to implement and set up storage plugins for ne
 
 A template plugin named [example](/storage/example) is also available.
 
-#### Benchmarks
+## Benchmarks
 
-##### Description: 1000 writes + 1000 reads ( [benchmark.py](/benchmark/benchmark.py) ) less is better.
+### Description: 1000 writes + 1000 reads ( [benchmark.py](/benchmark/benchmark.py) ) less is better.
 
 Benchmark results depend on system resources, current work load and network.
 For more information on tests and run environments, see the [benchmark](/benchmark) directory.
 
-##### Mohawk with different Plugins running on a desktop machine.
+#### Mohawk with different Plugins running on a desktop machine.
 
 | Plugin   | Time       | %CPU      | RSS byte      |
 |----------|------------|-----------|---------------|
@@ -57,31 +57,31 @@ For more information on tests and run environments, see the [benchmark](/benchma
 
 (1) the mongo usage metrics does not include usage of the mongodb server.
 
-##### Chart: different Plugins vs. Run Time
+#### Chart: different Plugins vs. Run Time
 
 ![Time chart](https://github.com/MohawkTSDB/MohawkTSDB.github.io/raw/master/benchmark/time.png?raw=true "benchmark time vm")
 
-##### Mohawk vs. Hawkular running on a vm under same load.
+#### Mohawk vs. Hawkular running on a vm under same load.
 
 | DB/Plugin          | Time        |
 |---------------------|-------------|
 |Hawkular/Casandra    |  2m8.783s   |
 |Mohawk/Memory        |  0m22.833s  |
 
-##### Chart: DB/Plugin vs. Run Time
+#### Chart: DB/Plugin vs. Run Time
 
 ![Time chart](https://github.com/MohawkTSDB/MohawkTSDB.github.io/raw/master/benchmark/time-vm.png?raw=true "benchmark time vm")
 
-#### Performance
+### Performance
 
 Moahawk cpu and memory usage is lower than Hawkular and comparable to Prometheus, for more details see [Performance](/benchmark/PERF.md) doc.
 
-###### Mohawk vs. Prometheus CPU (Pod name is hawkular-metrics, but actually running mohawk)
+#### Mohawk vs. Prometheus CPU (Pod name is hawkular-metrics, but actually running mohawk)
 
 ![CPU chart](https://github.com/MohawkTSDB/MohawkTSDB.github.io/raw/master/benchmark/mohawk-cpu.png?raw=true "benchmark cpu vm")
 ![CPU chart](https://github.com/MohawkTSDB/MohawkTSDB.github.io/raw/master/benchmark/prometheus-cpu.png?raw=true "benchmark cpu vm")
 
-###### Mohawk vs. Prometheus Memory (Pod name is hawkular-metrics, but actually running mohawk)
+#### Mohawk vs. Prometheus Memory (Pod name is hawkular-metrics, but actually running mohawk)
 
 ![CPU chart](https://github.com/MohawkTSDB/MohawkTSDB.github.io/raw/master/benchmark/mohawk-mem.png?raw=true "benchmark cpu vm")
 ![CPU chart](https://github.com/MohawkTSDB/MohawkTSDB.github.io/raw/master/benchmark/prometheus-mem.png?raw=true "benchmark cpu vm")
