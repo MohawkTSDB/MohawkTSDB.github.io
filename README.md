@@ -5,6 +5,23 @@
 
 Mohawk is a metric data storage engine, it's fun, fast, light and easy to use.
 
+```bash
+# run the server
+mohawk 
+2017/12/07 19:26:00 Start server, listen on http://0.0.0.0:8080
+
+# store some data
+curl http://localhost:8080/hawkular/metrics/gauges/raw -d \
+"[{\"id\":\"x\",\"data\":[{\"timestamp\":$(( $(date +%s) ))000,\"value\":42}]}]"
+
+curl http://localhost:8080/hawkular/metrics/gauges/raw -d \
+"[{\"id\":\"x\",\"data\":[{\"timestamp\":$(( $(date +%s) - 60 ))000,\"value\":42}]}]"
+
+# read data
+curl http://localhost:8080/hawkular/metrics/gauges/raw/query -d "{\"ids\":[\"x\"]}"
+[{"id": "x", "data": [{"timestamp":1512667581000,"value":42},{"timestamp":1512667510000,"value":42}]}]
+```
+
 ## Introduction
 
 Mohawk is a metric data storage engine that uses a plugin architecture for data storage and a simple REST API as the primary interface.
