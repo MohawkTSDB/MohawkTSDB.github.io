@@ -5,6 +5,18 @@
 
 Mohawk is a metric data storage engine, it's fun, fast, light and easy to use.
 
+## Introduction
+
+Mohawk is a metric data storage engine that uses a plugin architecture for data storage and a simple REST API as the primary interface.
+
+Mohawk can use different storage plugins for different use cases. Different storage plugins may vary in speed, persistence and scale ability. Mohawk use a subset of Hawkular's REST API, inheriting Hawkular's ecosystem of clients and plugins.
+
+Different use cases may have conflicting requirements for the metric engine, some use cases may require fast data transfer, while others may depend on long term, high availability data retention that inherently makes the system slower.
+
+Mohowk exposes the same simple REST API for different storage options, consumer application can use the same REST API with a lean low footprint stroage and with a resource-intensive high availability storage. Mohowk makes hierarchical data storage using short, middle and long term data retention tiers easy to set up and consume.     
+
+[Installation instruction in Github](https://github.com/MohawkTSDB/mohawk#installation) / [First steps examples on Github](https://github.com/MohawkTSDB/mohawk#running-the-server)
+
 ```bash
 # run the server
 mohawk 
@@ -19,20 +31,11 @@ curl http://localhost:8080/hawkular/metrics/gauges/raw -d \
 
 # read data
 curl http://localhost:8080/hawkular/metrics/gauges/raw/query -d "{\"ids\":[\"x\"]}"
-[{"id": "x", "data": [{"timestamp":1512667581000,"value":42},{"timestamp":1512667510000,"value":42}]}]
+[{"id": "x", "data": [
+    {"timestamp":1512667581000,"value":42},
+    {"timestamp":1512667510000,"value":42}
+]}]
 ```
-
-## Introduction
-
-Mohawk is a metric data storage engine that uses a plugin architecture for data storage and a simple REST API as the primary interface.
-
-Mohawk can use different storage plugins for different use cases. Different storage plugins may vary in speed, persistence and scale ability. Mohawk use a subset of Hawkular's REST API, inheriting Hawkular's ecosystem of clients and plugins.
-
-Different use cases may have conflicting requirements for the metric engine, some use cases may require fast data transfer, while others may depend on long term, high availability data retention that inherently makes the system slower.
-
-Mohowk exposes the same simple REST API for different storage options, consumer application can use the same REST API with a lean low footprint stroage and with a resource-intensive high availability storage. Mohowk makes hierarchical data storage using short, middle and long term data retention tiers easy to set up and consume.     
-
-[Installation instruction in Github](https://github.com/MohawkTSDB/mohawk#installation) / [First steps examples on Github](https://github.com/MohawkTSDB/mohawk#running-the-server)
 
 ## Compatibility
 
