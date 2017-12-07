@@ -1,6 +1,6 @@
 # Mohawk TSDB
 
-![Mohawk](/images/logo-128.png?raw=true "Mohawk Logo")
+![Mohawk](https://github.com/MohawkTSDB/MohawkTSDB.github.io/raw/master/images/logo-128.png?raw=true "Mohawk Logo")
 
 Mohawk is a metric data storage engine, it's fun, fast, light and easy to use.
 
@@ -17,7 +17,7 @@ Mohowk exposes the same simple REST API for different storage options, consumer 
 ## Getting started
 
 #### Go to the source:
-https://github.com/MohawkTSDB/mohawk
+[https://github.com/MohawkTSDB/mohawk](https://github.com/MohawkTSDB/mohawk)
 
 #### Using a Copr repository for Fedora:
 
@@ -71,7 +71,7 @@ For more information on tests and run environments, see the [benchmark](/benchma
 
 ##### Chart: different Plugins vs. Run Time
 
-![Time chart](/benchmark/time.png?raw=true "benchmark time vm")
+![Time chart](https://github.com/MohawkTSDB/MohawkTSDB.github.io/raw/master/benchmark/time.png?raw=true "benchmark time vm")
 
 ##### Mohawk vs. Hawkular running on a vm under same load.
 
@@ -82,7 +82,7 @@ For more information on tests and run environments, see the [benchmark](/benchma
 
 ##### Chart: DB/Plugin vs. Run Time
 
-![Time chart](/benchmark/time-vm.png?raw=true "benchmark time vm")
+![Time chart](https://github.com/MohawkTSDB/MohawkTSDB.github.io/raw/master/benchmark/time-vm.png?raw=true "benchmark time vm")
 
 #### Performance
 
@@ -90,11 +90,11 @@ Moahawk cpu and memory usage is lower than Hawkular and comparable to Prometheus
 
 ###### Mohawk vs. Prometheus CPU (Pod name is hawkular-metrics, but actually running mohawk)
 
-![CPU chart](/benchmark/mohawk-cpu.png?raw=true "benchmark cpu vm")
-![CPU chart](/benchmark/prometheus-cpu.png?raw=true "benchmark cpu vm")
+![CPU chart](https://github.com/MohawkTSDB/MohawkTSDB.github.io/raw/master/benchmark/mohawk-cpu.png?raw=true "benchmark cpu vm")
+![CPU chart](https://github.com/MohawkTSDB/MohawkTSDB.github.io/raw/master/benchmark/prometheus-cpu.png?raw=true "benchmark cpu vm")
 
 ###### Mohawk vs. Prometheus Memory (Pod name is hawkular-metrics, but actually running mohawk)
 
-![CPU chart](/benchmark/mohawk-mem.png?raw=true "benchmark cpu vm")
-![CPU chart](/benchmark/prometheus-mem.png?raw=true "benchmark cpu vm")
+![CPU chart](https://github.com/MohawkTSDB/MohawkTSDB.github.io/raw/master/benchmark/mohawk-mem.png?raw=true "benchmark cpu vm")
+![CPU chart](https://github.com/MohawkTSDB/MohawkTSDB.github.io/raw/master/benchmark/prometheus-mem.png?raw=true "benchmark cpu vm")
 
