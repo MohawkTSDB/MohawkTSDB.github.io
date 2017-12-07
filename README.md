@@ -41,7 +41,7 @@ Mohawk architecture makes it easy to implement and set up storage plugins for ne
 
 ##### Description: 1000 writes + 1000 reads ( [benchmark.py](/benchmark/benchmark.py) ) less is better.
 
-Benchmark results depend on system resources, current work load and network.
+[Benchmark](/benchmark) results depend on system resources, current work load and network.
 
 ##### Mohawk with different Plugins running on a desktop machine.
 
