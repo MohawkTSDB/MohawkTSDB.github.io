@@ -8,11 +8,29 @@ Mohawk is a metric data storage engine, it's fun, fast, light and easy to use.
 
 Mohawk is a metric data storage engine that uses a plugin architecture for data storage and a simple REST API as the primary interface.
 
-Mohawk can use different storage plugins for different use cases. Different storage plugins may vary in speed, persistence and scale ability. Mohawk use a subset of Hawkular's [REST API](/usage/REST.md), inheriting Hawkular's ecosystem of clients and plugins.
+Mohawk can use different storage plugins for different use cases. Different storage plugins may vary in speed, persistence and scale ability. Mohawk use a subset of Hawkular's REST API, inheriting Hawkular's ecosystem of clients and plugins.
 
 Different use cases may have conflicting requirements for the metric engine, some use cases may require fast data transfer, while others may depend on long term, high availability data retention that inherently makes the system slower.
 
 Mohowk exposes the same simple REST API for different storage options, consumer application can use the same REST API with a lean low footprint stroage and with a resource-intensive high availability storage. Mohowk makes hierarchical data storage using short, middle and long term data retention tiers easy to set up and consume.     
+
+## Getting started
+
+#### Go to the source:
+https://github.com/MohawkTSDB/mohawk
+
+#### Using a Copr repository for Fedora:
+
+```
+sudo dnf copr enable yaacov/mohawk
+sudo dnf install mohawk
+```
+
+#### Run using a container:
+
+```
+docker run -v [PATH TO KEY AND CERT FILES]:/root/ssh:Z yaacov/mohawk
+```
 
 #### Compatibility
 
@@ -22,9 +40,9 @@ Mohawk is tested(2) with [Hawkular](http://www.hawkular.org/) plugins, like [Haw
 
 #### Storage Plugins
 
-Mohawk architecture makes it easy to implement and set up [plugins](/storage) for new data storage. The storage directory include documentation, examples and a template for plugin development.
+Mohawk architecture makes it easy to implement and set up storage plugins for new data storage. The storage directory include documentation, examples and a template for plugin development.
 
-###### Current storage plugin list include:
+##### Current storage plugin list include:
 
 | Plugin name       |  Storage          | Advantages                                  | Use case                                 |
 |-------------------|-------------------|---------------------------------------------|------------------------------------------|
@@ -36,13 +54,12 @@ A template plugin named [example](/storage/example) is also available.
 
 #### Benchmarks
 
-###### Name: Run time, real
-###### Description: 1000 writes + 1000 reads ( [benchmark.py](/benchmark/benchmark.py) ) less is better.
+##### Description: 1000 writes + 1000 reads ( [benchmark.py](/benchmark/benchmark.py) ) less is better.
 
 Benchmark results depend on system resources, current work load and network.
 For more information on tests and run environments, see the [benchmark](/benchmark) directory.
 
-###### Mohawk with different Plugins running on a desktop machine.
+##### Mohawk with different Plugins running on a desktop machine.
 
 | Plugin   | Time       | %CPU      | RSS byte      |
 |----------|------------|-----------|---------------|
@@ -52,18 +69,18 @@ For more information on tests and run environments, see the [benchmark](/benchma
 
 (1) the mongo usage metrics does not include usage of the mongodb server.
 
-###### Chart: different Plugins vs. Run Time
+##### Chart: different Plugins vs. Run Time
 
 ![Time chart](/benchmark/time.png?raw=true "benchmark time vm")
 
-###### Mohawk vs. Hawkular running on a vm under same load.
+##### Mohawk vs. Hawkular running on a vm under same load.
 
 | DB/Plugin          | Time        |
 |---------------------|-------------|
 |Hawkular/Casandra    |  2m8.783s   |
 |Mohawk/Memory        |  0m22.833s  |
 
-###### Chart: DB/Plugin vs. Run Time
+##### Chart: DB/Plugin vs. Run Time
 
 ![Time chart](/benchmark/time-vm.png?raw=true "benchmark time vm")
 
@@ -80,3 +97,4 @@ Moahawk cpu and memory usage is lower than Hawkular and comparable to Prometheus
 
 ![CPU chart](/benchmark/mohawk-mem.png?raw=true "benchmark cpu vm")
 ![CPU chart](/benchmark/prometheus-mem.png?raw=true "benchmark cpu vm")
+
