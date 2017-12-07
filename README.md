@@ -15,8 +15,6 @@ Different use cases may have conflicting requirements for the metric engine, som
 
 Mohowk exposes the same simple REST API for different storage options, consumer application can use the same REST API with a lean low footprint stroage and with a resource-intensive high availability storage. Mohowk makes hierarchical data storage using short, middle and long term data retention tiers easy to set up and consume.     
 
-[Installation instruction in Github](https://github.com/MohawkTSDB/mohawk#installation) / [First steps examples on Github](https://github.com/MohawkTSDB/mohawk#running-the-server)
-
 ```bash
 # run the server
 mohawk 
