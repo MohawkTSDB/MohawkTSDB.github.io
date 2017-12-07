@@ -1,4 +1,4 @@
-[/mohawk/](./)
+/[mohawk](./)/
 
 # Mohawk TSDB
 
