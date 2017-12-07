@@ -1,5 +1,5 @@
 
-/ [mohawk](/) / [performance](/benchmark/PERF.md)
+/ [mohawk](/) / [performance](/benchmark/PERF.html)
 
 ## Performance
 
