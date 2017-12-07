@@ -14,9 +14,7 @@ Different use cases may have conflicting requirements for the metric engine, som
 
 Mohowk exposes the same simple REST API for different storage options, consumer application can use the same REST API with a lean low footprint stroage and with a resource-intensive high availability storage. Mohowk makes hierarchical data storage using short, middle and long term data retention tiers easy to set up and consume.     
 
-[Installation instruction in Github](https://github.com/MohawkTSDB/mohawk#installation)
-
-[First steps examples on Github](https://github.com/MohawkTSDB/mohawk#running-the-server)
+[Installation instruction in Github](https://github.com/MohawkTSDB/mohawk#installation) / [First steps examples on Github](https://github.com/MohawkTSDB/mohawk#running-the-server)
 
 ## Compatibility
 
@@ -36,14 +34,12 @@ Mohawk architecture makes it easy to implement and set up storage plugins for ne
 | sqlite            | Local File        | No data loss on network outages             | Persistence data, W/O external data base |
 | mongo             | Mongo DB          | High availabilty, High volume storage       | Long term H.A. storage                   |
 
-A template plugin named [example](/storage/example) is also available.
 
 ## Benchmarks
 
 ##### Description: 1000 writes + 1000 reads ( [benchmark.py](/benchmark/benchmark.py) ) less is better.
 
 Benchmark results depend on system resources, current work load and network.
-For more information on tests and run environments, see the [benchmark](/benchmark) directory.
 
 ##### Mohawk with different Plugins running on a desktop machine.
 
