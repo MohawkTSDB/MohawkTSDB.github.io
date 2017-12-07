@@ -70,7 +70,7 @@ Mohawk architecture makes it easy to implement and set up storage plugins for ne
 
 ### Performance
 
-Moahawk cpu and memory usage is lower than Hawkular and comparable to Prometheus, for more details see [Performance](/benchmark/PERF.md) doc.
+Moahawk cpu and memory usage is lower than Hawkular and comparable to Prometheus, for more details see [Performance](/benchmark/PERF.html) doc.
 
 ##### Chart: Mohawk vs. Prometheus CPU (Pod name is hawkular-metrics, but actually running mohawk)
 
