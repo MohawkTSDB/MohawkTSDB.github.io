@@ -1,7 +1,7 @@
 
 # Mohawk TSDB
 
-![Mohawk](https://mohawktsdb.github.io/ "Mohawk Logo")
+![Mohawk](https://raw.githubusercontent.com/MohawkTSDB/MohawkTSDB.github.io/master/images/logo-128.png "Mohawk Logo")
 
 Mohawk is a metric data storage engine, it's fun, fast, light and easy to use.
 
