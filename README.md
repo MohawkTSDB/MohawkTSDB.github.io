@@ -70,7 +70,7 @@ Mohawk architecture makes it easy to implement and set up storage plugins for ne
 |mongo (2) |  0m4.885s  | 0.5 - 0.8 | 11892 - 11892 |
 |sqlite3   |  0m14.471s | 0.2 - 7.4 | 8416 - 12560  |
 
-(1) Description: 1000 writes + 1000 reads ( [benchmark.py](/benchmark/benchmark.py) ) less is better.
+(1) Description: 1000 writes + 1000 reads ( [benchmark.py](https://github.com/MohawkTSDB/MohawkTSDB.github.io/blob/master/benchmark/benchmark.py) ) less is better.
 
 (2) the mongo usage metrics does not include usage of the mongodb server.
 
