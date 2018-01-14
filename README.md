@@ -13,25 +13,13 @@ Different use cases may have conflicting requirements for the metric engine, som
 
 Mohowk exposes the same simple REST API for different storage options, consumer application can use the same REST API with a lean low footprint stroage and with a resource-intensive high availability storage. Mohowk makes hierarchical data storage using short, middle and long term data retention tiers easy to set up and consume.     
 
-```bash
-# run the server
-mohawk
-2017/12/07 19:26:00 Start server, listen on http://0.0.0.0:8080
+##### Run Mohawk docker image:
 
-# store some data
-curl http://localhost:8080/hawkular/metrics/gauges/raw -d \
-"[{\"id\":\"x\",\"data\":[{\"timestamp\":$(( $(date +%s) ))000,\"value\":42}]}]"
+![Mohawk](/images/install-docker.gif?raw=true "Mohawk run docker")
 
-curl http://localhost:8080/hawkular/metrics/gauges/raw -d \
-"[{\"id\":\"x\",\"data\":[{\"timestamp\":$(( $(date +%s) - 60 ))000,\"value\":42}]}]"
+##### Install using rpm on Fedora/CentOS:
 
-# read data
-curl http://localhost:8080/hawkular/metrics/gauges/raw/query -d "{\"ids\":[\"x\"]}"
-[{"id": "x", "data": [
-    {"timestamp":1512667581000,"value":42},
-    {"timestamp":1512667510000,"value":42}
-]}]
-```
+![Mohawk](/images/install-copr.gif?raw=true "Mohawk install rpm")
 
 ## Compatibility
 
