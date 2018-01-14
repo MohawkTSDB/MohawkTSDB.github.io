@@ -13,13 +13,32 @@ Different use cases may have conflicting requirements for the metric engine, som
 
 Mohowk exposes the same simple REST API for different storage options, consumer application can use the same REST API with a lean low footprint stroage and with a resource-intensive high availability storage. Mohowk makes hierarchical data storage using short, middle and long term data retention tiers easy to set up and consume.     
 
-##### Run Mohawk docker image:
+##### Running Mohawk:
+
+![Mohawk](/images/mohawk-help.gif?raw=true "Mohawk help")
+
+```bash
+mohawk --version
+mohawk --help
+mohawk --options help
+```
+
+##### Run Mohawk container:
 
 ![Mohawk](/images/install-docker.gif?raw=true "Mohawk run docker")
 
-##### Install using rpm on Fedora/CentOS:
+```bash
+sudo docker run --name mohawk -v $(readlink -f ./):/root/ssh:Z yaacov/mohawk:latest
+```
+
+##### Run Mohawk on Fedora/CentOS:
 
 ![Mohawk](/images/install-copr.gif?raw=true "Mohawk install rpm")
+
+```bash
+sudo dnf copr enable yaacov/mohawk
+sudo dnf install mohawk
+```
 
 ## Compatibility
 
