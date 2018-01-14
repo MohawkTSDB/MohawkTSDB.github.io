@@ -7,6 +7,15 @@
     background-image: linear-gradient(120deg, #155799, #155799);
 }
 
+.header-logo {
+  float: left;
+  display: block;
+}
+
+.header-text {
+  margin-left: 364px;
+}
+
 .main-content h1, .main-content h2 {
     color: #d20d1d;
 }
