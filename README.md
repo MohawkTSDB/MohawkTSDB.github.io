@@ -1,8 +1,6 @@
 
 # Mohawk TSDB
 
-![Mohawk](https://raw.githubusercontent.com/MohawkTSDB/MohawkTSDB.github.io/master/images/logo-128.png "Mohawk Logo")
-
 Mohawk is a metric data storage engine, it's fun, fast, light and easy to use.
 
 ## Introduction
@@ -17,7 +15,7 @@ Mohowk exposes the same simple REST API for different storage options, consumer 
 
 ```bash
 # run the server
-mohawk 
+mohawk
 2017/12/07 19:26:00 Start server, listen on http://0.0.0.0:8080
 
 # store some data
@@ -102,5 +100,3 @@ Moahawk cpu and memory usage is lower than Hawkular and comparable to Prometheus
 
 ![CPU chart](https://github.com/MohawkTSDB/MohawkTSDB.github.io/raw/master/benchmark/mohawk-mem.png?raw=true "benchmark cpu vm")
 ![CPU chart](https://github.com/MohawkTSDB/MohawkTSDB.github.io/raw/master/benchmark/prometheus-mem.png?raw=true "benchmark cpu vm")
-
-
