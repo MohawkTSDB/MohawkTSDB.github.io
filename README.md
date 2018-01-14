@@ -46,9 +46,16 @@ Mohawk is tested(2) with [Hawkular](http://www.hawkular.org/) plugins, like [Haw
 
 (2) Mohawk implement only part of Hawkular's API, some functionality may be missing.
 
-##### Hawkular Grafana Plugin showing mohawk data:
+##### Setting up Hawkular Grafana Plugin:
 
-![Grafana plugin](https://github.com/yaacov/fosdem-2017/raw/master/images/grafana-screenshot2.png)
+![Mohawk](/images/mohawk-grafana.gif?raw=true "Mohawk help")
+
+##### More data in chart:
+
+![Mohawk](/images/mohawk-grafana-plugin.gif?raw=true "Mohawk help")
+
+Using [Hawkular Grafana Plugin](https://grafana.com/plugins/hawkular-datasource) and [push_metrics_example.sh](https://github.com/MohawkTSDB/mohawk/blob/master/examples/push_metrics_example.sh) to push random data into Mohawk.
+
 
 ## Storage Plugins
 
