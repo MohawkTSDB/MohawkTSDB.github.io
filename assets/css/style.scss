@@ -2,15 +2,20 @@
 ---
 
 @import "{{ site.theme }}";
-
 .page-header {
-    background-image: linear-gradient(120deg, #155799, #155799);
+    background-image: linear-gradient(120deg, #152b42, #123150);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .page-header-inside {
   margin-left: auto;
   margin-right: auto;
   display: inline-block;
+}
+
+#header-logo {
+  height: 220px;
 }
 
 .header-logo {
