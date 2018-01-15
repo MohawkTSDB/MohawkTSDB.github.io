@@ -56,6 +56,11 @@ Mohawk is tested(2) with [Hawkular](http://www.hawkular.org/) plugins, like [Haw
 
 Using [Hawkular Grafana Plugin](https://grafana.com/plugins/hawkular-datasource) and [push_metrics_example.sh](https://github.com/MohawkTSDB/mohawk/blob/master/examples/push_metrics_example.sh) to push random data into Mohawk.
 
+##### Setting up Mohawk on Openshift:
+
+![Mohawk](/images/mohawk-openshift.gif?raw=true "Mohawk help")
+
+Using [Mohawk container](https://github.com/MohawkTSDB/mohawk-container/blob/master/container-metrics/) example.
 
 ## Storage Plugins
 
