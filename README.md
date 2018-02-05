@@ -29,7 +29,7 @@ mohawk --options help
 ```
 
 ```bash
-# Run server on http://0.0.0.0:8080
+# run server on http://0.0.0.0:8080
 mohawk
 ```
 
