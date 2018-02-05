@@ -1,27 +1,27 @@
 / [mohawk](/) / [install](/install)
 
-##### Building from source
+#### Building from source
 
-###### Create a directory for sources
+##### Create a directory for sources
 
 ```
 mkdir -p ${GOPATH}/src/github.com/MohawkTSDB && cd ${GOPATH}/src/github.com/MohawkTSDB
 ```
 
-# Clone the sources from the git repository
+##### Clone the sources from the git repository
 
 ```
 git clone https://github.com/MohawkTSDB/mohawk.git
 cd mohawk
 ```
 
-###### Update vedor sources
+##### Update vedor sources
 
 ```
 make vendor
 ```
 
-###### Build, test and install
+##### Build, test and install
 
 ```
 make clean
@@ -30,7 +30,7 @@ make test
 make install
 ```
 
-###### Set up tls secrets for testing
+##### Set up tls secrets for testing
 
 ```
 make secret
@@ -53,7 +53,7 @@ If running from source, the Makefile has a utility for generating secrets:
 make secret
 ```
 
-###### Running the server with tls enabled
+##### Running the server with tls enabled
 
 Using TLS server requires certification files, default file names are server.key and server.pem .
 
@@ -61,7 +61,7 @@ Using TLS server requires certification files, default file names are server.key
 mohawk --tls --gzip --port 8443
 ```
 
-##### Running Mohawk:
+#### Running Mohawk:
 
 ![Mohawk](/images/mohawk-help.gif?raw=true "Mohawk help")
 
@@ -71,7 +71,7 @@ mohawk --help
 mohawk --options help
 ```
 
-##### Run Mohawk container:
+#### Run Mohawk container:
 
 ![Mohawk](/images/install-docker.gif?raw=true "Mohawk run docker")
 
@@ -79,7 +79,7 @@ mohawk --options help
 sudo docker run --name mohawk -v $(readlink -f ./):/root/ssh:Z yaacov/mohawk:latest
 ```
 
-##### Run Mohawk on Fedora/CentOS:
+#### Run Mohawk on Fedora/CentOS:
 
 ![Mohawk](/images/install-copr.gif?raw=true "Mohawk install rpm")
 
