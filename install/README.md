@@ -61,13 +61,13 @@ mohawk --tls --gzip --port 8443
 mohawk
 ```
 
-![Mohawk](/images/mohawk-help.gif?raw=true "Mohawk help")
-
 ```bash
 mohawk --version
 mohawk --help
 mohawk --options help
 ```
+
+![Mohawk](/images/mohawk-help.gif?raw=true "Mohawk help")
 
 ## Run Mohawk container
 
