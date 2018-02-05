@@ -28,6 +28,21 @@ mohawk --help
 mohawk --options help
 ```
 
+```bash
+# Run server on http://0.0.0.0:8080
+mohawk
+```
+
+```bash
+# post some data (timestamp is in ms)
+curl http://127.0.0.1:8080/hawkular/metrics/gauges/raw \
+     -d "[{\"id\":\"machine/example.com/test\", \"data\":[{\"timestamp\": $(date +%s)000, \"value\": 42}]}]"
+     
+# read multiple data points using an ids list, time can be in ms or relative [with s, mn, h or d postfix]
+curl http://127.0.0.1:8080/hawkular/metrics/gauges/raw/query \
+     -d "{\"ids\": [\"machine/example.com/test\"], \"start\": \"-5mn\"}"
+```
+
 ## Compatibility
 
 [Mohawk Compatibility](/compatibility) with Grafana/Kubernetes/OpenShift echosystems.
