@@ -67,6 +67,10 @@ mohawk --options help
 
 ## Run Mohawk container
 
+```bash
+mohawk
+```
+
 ![Mohawk](/images/install-docker.gif?raw=true "Mohawk run docker")
 
 ```bash
