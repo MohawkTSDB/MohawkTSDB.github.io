@@ -3,23 +3,38 @@
 ##### Building from source
 
 ###### Create a directory for sources
+
+```
 mkdir -p ${GOPATH}/src/github.com/MohawkTSDB && cd ${GOPATH}/src/github.com/MohawkTSDB
+```
 
 # Clone the sources from the git repository
+
+```
 git clone https://github.com/MohawkTSDB/mohawk.git
 cd mohawk
+```
 
 ###### Update vedor sources
+
+```
 make vendor
+```
 
 ###### Build, test and install
+
+```
 make clean
 make
 make test
 make install
+```
 
 ###### Set up tls secrets for testing
+
+```
 make secret
+```
 
 ##### Creating Mock Certifications for testing
 
