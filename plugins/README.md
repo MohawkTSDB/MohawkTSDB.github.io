@@ -14,11 +14,7 @@ Mohawk architecture makes it easy to implement and set up storage plugins for ne
 | mongo             | Mongo DB          | High availabilty, High volume storage       | Long term H.A. storage                   |
 
 
-## Benchmarks
-
-[Benchmark](/benchmark) (1) results depend on system resources, current work load and network.
-
-##### Mohawk with different Plugins running on a desktop machine.
+#### Storage plugins Benchmarks
 
 | Plugin   | Time       | %CPU      | RSS byte      |
 |----------|------------|-----------|---------------|
