@@ -71,17 +71,18 @@ mohawk --options help
 
 ## Run Mohawk container
 
-![Mohawk](/images/install-docker.gif?raw=true "Mohawk run docker")
-
 ```bash
 sudo docker run --name mohawk -v $(readlink -f ./):/root/ssh:Z yaacov/mohawk:latest
 ```
 
-## Run Mohawk on Fedora/CentOS
+![Mohawk](/images/install-docker.gif?raw=true "Mohawk run docker")
 
-![Mohawk](/images/install-copr.gif?raw=true "Mohawk install rpm")
+## Run Mohawk on Fedora/CentOS
 
 ```bash
 sudo dnf copr enable yaacov/mohawk
 sudo dnf install mohawk
 ```
+
+![Mohawk](/images/install-copr.gif?raw=true "Mohawk install rpm")
+
