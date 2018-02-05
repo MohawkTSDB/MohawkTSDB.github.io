@@ -57,6 +57,10 @@ mohawk --tls --gzip --port 8443
 
 ## Running Mohawk
 
+```bash
+mohawk
+```
+
 ![Mohawk](/images/mohawk-help.gif?raw=true "Mohawk help")
 
 ```bash
@@ -66,10 +70,6 @@ mohawk --options help
 ```
 
 ## Run Mohawk container
-
-```bash
-mohawk
-```
 
 ![Mohawk](/images/install-docker.gif?raw=true "Mohawk run docker")
 
