@@ -40,7 +40,7 @@ Mohawk is tested(1) with [Hawkular](http://www.hawkular.org/) plugins, like [Haw
 
 Mohawk [Storage Plugins](/plugins).
 
-Mohawk architecture makes it easy to implement and set up [storage plugins](/plugins) for new data storage. The storage directory include documentation, examples and a template for plugin development.
+Mohawk architecture makes it easy to implement and set up storage plugins for new data storage. The storage directory include documentation, examples and a template for plugin development.
 
 ##### Current storage plugin list include:
 
