@@ -38,8 +38,8 @@ mohawk
 curl http://127.0.0.1:8080/hawkular/metrics/gauges/raw -d "[{ \
     \"id\":\"machine/example.com/test\", \
     \"data\":[{\"timestamp\": $(date +%s)000, \"value\": 42}]}]"
-     
-# read multiple data points using an ids list, time can be 
+
+# read multiple data points using an ids list, time can be
 # in ms or relative [with s, mn, h or d postfix]
 curl http://127.0.0.1:8080/hawkular/metrics/gauges/raw/query -d "{ \
     \"ids\": [\"machine/example.com/test\"], \"start\": \"-5mn\"}"
@@ -59,6 +59,8 @@ curl http://127.0.0.1:8080/hawkular/metrics/metrics?tags=hostname:.*\.com
 [Mohawk Compatibility](/compatibility) with Grafana/Kubernetes/OpenShift echosystems.
 
 Mohawk is tested(1) with [Hawkular](http://www.hawkular.org/) plugins, like [Hawkular Grafana Plugin](https://grafana.com/plugins/hawkular-datasource) and clients like [Python](https://github.com/hawkular/hawkular-client-python) and [Ruby](https://github.com/hawkular/hawkular-client-ruby). Mohawk also work with [Heapster](https://github.com/kubernetes/heapster) to automagically scrape metrics from Kubernetes/OpenShift clusters.
+
+Mohawk can also serve as [Prometheus](https://prometheus.io/) scraping endpoint.
 
 (1) Mohawk implement only part of Hawkular's API, some functionality may be missing.
 

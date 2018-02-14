@@ -15,3 +15,24 @@ Mohawk is tested(1) with [Hawkular](http://www.hawkular.org/) plugins, like [Haw
 ![Mohawk](/images/mohawk-grafana-plugin.gif?raw=true "Mohawk help")
 
 Using [Hawkular Grafana Plugin](https://grafana.com/plugins/hawkular-datasource) and [push_metrics_example.sh](https://github.com/MohawkTSDB/mohawk/blob/master/examples/push_metrics_example.sh) to push random data into Mohawk.
+
+##### Set as a Prometheus scraping point:
+
+Example `prometheus.yml` file:
+```yml
+scrape_configs:
+- job_name: 'mohawk'
+
+  scrape_interval: 5s
+  scrape_timeout: 5s
+
+  metrics_path: '/hawkular/metrics/exports'
+  scheme: 'http'
+  tls_config:
+    insecure_skip_verify: true
+
+  static_configs:
+  - targets: ['10.35.3.121:8080']
+```
+
+![Mohawk](/images/mohawk-prometheus.gif?raw=true "Mohawk help")
