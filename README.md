@@ -45,7 +45,7 @@ curl http://127.0.0.1:8080/hawkular/metrics/gauges/raw/query -d "{ \
     \"ids\": [\"machine/example.com/test\"], \"start\": \"-5mn\"}"
 
 # post some tags
-curl http://127.0.0.1:8080/hawkular/metrics/gauges/tags -d "[{ \
+curl -X PUT http://127.0.0.1:8080/hawkular/metrics/gauges/tags -d "[{ \
     \"id\":\"machine/example.com/test\", \
     \"tags\":{\"type\":\"node\",\"hostname\":\"example.com\"}}]"
 
