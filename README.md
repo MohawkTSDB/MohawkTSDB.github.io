@@ -47,7 +47,7 @@ curl http://127.0.0.1:8080/hawkular/metrics/gauges/raw/query -d "{ \
 # post some tags
 curl -X PUT http://127.0.0.1:8080/hawkular/metrics/gauges/tags -d "[{ \
     \"id\":\"machine/example.com/test\", \
-    \"tags\":{\"type\":\"node\",\"hostname\":\"example.com\"}}]"
+    \"tags\":{\"__name__\":\"test\",\"hostname\":\"example.com\"}}]"
 
 
 # look for metrics by tag value (using a regexp)
