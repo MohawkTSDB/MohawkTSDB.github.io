@@ -36,3 +36,26 @@ scrape_configs:
 ```
 
 ![Mohawk](/images/mohawk-prometheus.gif?raw=true "Mohawk help")
+
+```
+# run Prometheus
+docker run -p 9090:9090 -v /home/yzamir/prometheus.yml:/etc/prometheus/prometheus.yml:Z prom/prometheus
+```
+
+```
+# run mohawk and push some random data
+
+# push the labels once
+curl http://127.0.0.1:8080/hawkular/metrics/gauges/tags -d "[{ \
+    \"id\":\"machine/example.com/test\", \
+    \"tags\":{\"__name__\":\"test\",\"hostname\":\"example.com\"}}]" -X PUT
+
+# push data every 1s
+while true; do \
+  curl http://127.0.0.1:8080/hawkular/metrics/gauges/raw -d "[{ \
+       \"id\":\"machine/example.com/test\", \
+       \"data\":[{\"timestamp\":$(date +%s)000,\"value\":$(echo "$(date +%s)%10"|bc)}]}]"; \
+  sleep 1; done
+```
+
+![Mohawk](/images/mohawk-prometheus-g.gif?raw=true "Mohawk help")
