@@ -56,7 +56,7 @@ curl http://127.0.0.1:8080/hawkular/metrics/metrics?tags=hostname:.*\.com
 
 ## Compatibility
 
-[Mohawk Compatibility](/compatibility) with Grafana/Kubernetes/OpenShift echosystems.
+[Mohawk Compatibility](/compatibility) with Grafana/Kubernetes/OpenShift and Prometheus echosystems.
 
 Mohawk is tested(1) with [Hawkular](http://www.hawkular.org/) plugins, like [Hawkular Grafana Plugin](https://grafana.com/plugins/hawkular-datasource) and clients like [Python](https://github.com/hawkular/hawkular-client-python) and [Ruby](https://github.com/hawkular/hawkular-client-ruby). Mohawk also work with [Heapster](https://github.com/kubernetes/heapster) to automagically scrape metrics from Kubernetes/OpenShift clusters.
 
