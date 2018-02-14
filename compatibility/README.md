@@ -6,6 +6,8 @@ Mohawk is tested(1) with [Hawkular](http://www.hawkular.org/) plugins, like [Haw
 
 (1) Mohawk implement only part of Hawkular's API, some functionality may be missing.
 
+### Hawkular / Grafana
+
 ##### Setting up Hawkular Grafana Plugin:
 
 ![Mohawk](/images/mohawk-grafana.gif?raw=true "Mohawk help")
@@ -15,6 +17,8 @@ Mohawk is tested(1) with [Hawkular](http://www.hawkular.org/) plugins, like [Haw
 ![Mohawk](/images/mohawk-grafana-plugin.gif?raw=true "Mohawk help")
 
 Using [Hawkular Grafana Plugin](https://grafana.com/plugins/hawkular-datasource) and [push_metrics_example.sh](https://github.com/MohawkTSDB/mohawk/blob/master/examples/push_metrics_example.sh) to push random data into Mohawk.
+
+### Prometheus
 
 ##### Set as a Prometheus scraping point:
 
