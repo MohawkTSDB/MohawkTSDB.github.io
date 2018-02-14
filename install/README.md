@@ -73,6 +73,9 @@ mohawk --options help
 
 ```bash
 sudo docker run --name mohawk -v $(readlink -f ./):/root/ssh:Z yaacov/mohawk:latest
+
+# get the server IP
+docker inspect mohawk | grep IPAddress\" | head -n1 | egrep -o '[0-9.]+'
 ```
 
 ![Mohawk](/images/install-docker.gif?raw=true "Mohawk run docker")
